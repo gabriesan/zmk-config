@@ -32,104 +32,6 @@
         };
     };
 
-    macros {
-        ae: ae {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp U>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LCTRL>
-                , <&macro_tap &kp E &kp 6 &kp SPACE>
-                ;
-        };
-        oe: oe {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp U>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LCTRL>
-                , <&macro_tap &kp D &kp 8 &kp SPACE>
-                ;
-        };
-
-        aa: aa {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp U>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LCTRL>
-                , <&macro_tap &kp E &kp 5 &kp SPACE>
-                ;
-        };
-
-        AE: AE {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp U>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LCTRL>
-                , <&macro_tap &kp C &kp 6 &kp SPACE>
-                ;
-        };
-
-        OE: OE {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp U>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LCTRL>
-                , <&macro_tap &kp D &kp 8 &kp SPACE>
-                ;
-        };
-
-        AA: AA {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp U>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LCTRL>
-                , <&macro_tap &kp C &kp 5 &kp SPACE>
-                ;
-        };
-        GNSS_pass: GNSS_pass {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp L>
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp e &kp a &kp s &kp t>
-                , <&macro_tap &kp 4 &kp 0>
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp E>
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp x &kp p &kp e &kp r &kp i &kp m &kp e &kp n &kp t>
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp S>
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp p &kp e &kp e &kp d>
-                ;
-        };
-    };
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -160,14 +62,14 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ESC      │  {       │  }       │  [       │  ]       │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  BSPC    │
-            &kp ESC    &kp LBRC   &kp LBRC   &kp LBKT  &kp RBKT       &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC 
+        //│ ESC      │  1       │  2       │  3       │ DELETE   │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  BSPC    │
+            &kp ESC    &kp N1     &kp N2     &kp N3     &kp DEL        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ !        │  @       │  #       │  $       │ %        │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ENTER   │
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp ENTER
+        //│ TAB      │  4       │  5       │  6       │ WINDOWS  │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ENTER   │
+            &kp TAB    &kp N4     &kp N5     &kp N6     &kp LGUI       &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ F1       │  F2      │  F3      │  F4      │  F5      │   │  ;       │  :       │  , <     │ . >      │          │
-           &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &kp SEMI  &kp COLON   &kp COMMA  &kp DOT      &trans
+        //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │  ;       │  :       │          │
+           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &kp SEMI   &kp COLON  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp LSHFT  &kp LCTRL      &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -177,14 +79,14 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ESC      │   1 !    │  2 @     │  3 #     │  DELETE  │   │  ^       │  (       │  )       │  ~       │  BSPC    │
-            &kp ESC    &kp N1     &kp N2     &kp N1     &kp DEL       &kp CARET  &kp LPAR   &kp RPAR   &kp TILDE  &kp BSPC 
+        //│ ESC      │  {       │  }       │  [       │  ]       │   │  ^       │  (       │  )       │  ~       │  BSPC    │
+            &kp ESC    &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT       &kp CARET  &kp LPAR   &kp RPAR   &kp TILDE  &kp BSPC 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  TAB     │   4 $    │  5 %     │  6 ^     │  WINDOWS │   │  *       │  -       │  =       │  \       │  ` ~     │
-            &kp TAB   &kp N4     &kp N5      &kp N6    &kp LGUI      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
+        //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
+            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  LSHIFT  │   7 &    │  8 *     │  9 (     │  0 )     │   │  &       │  _       │  +       │  │       │          │
-           &kp LSHIFT  &kp N7     &kp N8     &kp N9     &kp N0        &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
+        //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
+            &trans     &trans     &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &kp LALT   &kp RCTRL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
