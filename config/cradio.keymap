@@ -83,11 +83,11 @@
         //│ ESC      │  1       │  2       │  3       │ DELETE   │   │  ^       │  (       │  )       │  ~       │  BSPC    │
             &kp ESC    &kp N1     &kp N2     &kp N3     &kp DEL        &kp CARET  &kp LPAR   &kp RPAR   &kp TILDE  &kp BSPC 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ TAB      │  4       │  5       │  6       │ USB/BLE  │   │  *       │  -       │  =       │  \       │  `       │
-            &kp TAB    &kp N4     &kp N5     &kp N6     &out OUT_TOG   &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
+        //│ TAB      │  4       │  5       │  6       │ USB/BLE  │   │  *       │  -       │  =       │  \       │ ENTER    │
+            &kp TAB    &kp N4     &kp N5     &kp N6     &out OUT_TOG   &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  7       │  8       │  9       │  0       │   │  &       │  _       │  +       │  │       │          │
-            &kp F2     &kp N7     &kp N8     &kp N9     &kp N0         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
+        //│          │  7       │  8       │  9       │  0       │   │  &       │  _       │  +       │  │       │  `       │
+            &kp F2     &kp N7     &kp N8     &kp N9     &kp N0         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &kp GRAVE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &kp LALT   &lt 1 RCTRL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
