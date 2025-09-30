@@ -20,8 +20,23 @@
         };
         combo_bspc {
             timeout-ms = <50>;
-            key-positions = <9 10>;
+            key-positions = <8 9>;
             bindings = <&kp BSPC>;
+        };
+        combo_ae {
+            timeout-ms = <50>;
+            key-positions = <2 10>;
+            bindings = <&kp SQT>;
+        };
+        combo_oe {
+            timeout-ms = <50>;
+            key-positions = <2 8>;
+            bindings = <&kp BSPC>;
+        };
+        combo_aa {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp LBKT>;
         };
     };
 };
