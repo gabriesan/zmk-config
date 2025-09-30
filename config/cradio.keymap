@@ -11,6 +11,17 @@
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht LALT k3  &ht RSHFT k4
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+    };
+};
+
+/ {
     behaviors {
         ht: hold_tap {
             label = "hold_tap";
@@ -32,16 +43,6 @@
             bindings = <&kp>, <&kp>;
         };
     };
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-    };
-};
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
