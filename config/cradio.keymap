@@ -53,19 +53,19 @@
             key-positions = <10 11>;
             bindings = <&kp LBKT>;
         };
-        combo_play-pause {
-            timeout-ms = <50>;
-            key-positions = <2 3>;
-            bindings = <&kp C_PP>;
-        };
         combo_prev {
             timeout-ms = <50>;
             key-positions = <1 2>;
             bindings = <&kp C_PREV>;
         };
+        combo_play-pause {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp C_PP>;
+        };
         combo_next {
             timeout-ms = <50>;
-            key-positions = <3 4>;
+            key-positions = <2 4>;
             bindings = <&kp C_NEXT>;
         };
         combo_vol-dn {
@@ -80,8 +80,23 @@
         };
         combo_vol-up {
             timeout-ms = <50>;
-            key-positions = <13 14>;
+            key-positions = <12 14>;
             bindings = <&kp C_VOL_UP>;
+        };
+        combo_cut {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp LC(X)>;
+        };
+        combo_copy {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp LC(C)>;
+        };
+        combo_paste {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&kp LC(V)>;
         };
     };
 };
