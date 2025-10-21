@@ -13,6 +13,16 @@
 / {
     combos {
         compatible = "zmk,combos";
+        combo_Layer0 {
+            timeout-ms = <50>;
+            key-positions = <4 5>;
+            bindings = <&to 0>;
+        };
+        combo_Layer6 {
+            timeout-ms = <50>;
+            key-positions = <3 6>;
+            bindings = <&to 6>;
+        };
         combo_esc {
             timeout-ms = <50>;
             key-positions = <0 1>;
@@ -35,7 +45,7 @@
         };
         combo_print-screen {
             timeout-ms = <50>;
-            key-positions = <0 9>;
+            key-positions = <0 4>;
             bindings = <&kp PSCRN>;
         };
         combo_ae {
@@ -85,7 +95,7 @@
         };
         combo_cut {
             timeout-ms = <50>;
-            key-positions = <20 21>;
+            key-positions = <21 22>;
             bindings = <&kp LC(X)>;
         };
         combo_copy {
@@ -230,6 +240,22 @@
            &kp Z       &kp X      &kp C      &kp V      &kp EQUAL      &kp F9     &kp F10    &kp F11    &kp F12    &to 0
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp LALT  &td RSHFT SPACE  &trans     &trans
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+        colemak_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  ' "     │
+            &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp SQT
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │  O       │
+            HRML(A,        R,         S,         T)     &kp G          &kp M      HRMR(N,        E,         I,        O)
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
+            &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                         &lt 2 TAB  &td LCTRL ENTER &td RSHFT SPACE  &lt 1 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
