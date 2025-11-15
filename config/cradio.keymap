@@ -186,7 +186,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │  1       │  2       │  3       │ DELETE   │   │  ^       │  (       │  )       │  |       │  BSPC    │
-            &kp ESC    &kp N1     &kp N2     &kp N3     &kp DEL        &kp CARET  &kp LPAR   &kp RPAR   &kp TILDE  &kp BSPC 
+            &kp ESC    &kp N1     &kp N2     &kp N3     &kp DEL        &kp CARET  &kp LPAR   &kp RPAR   &kp PIPE   &kp BSPC 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ TAB      │  4       │  5       │  6       │ USB/BLE  │   │  *       │  -       │  =       │  \       │ ENTER    │
             &kp TAB    &kp N4     &kp N5     &kp N6     &out OUT_TOG   &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp ENTER
