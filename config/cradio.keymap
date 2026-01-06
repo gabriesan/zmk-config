@@ -176,7 +176,7 @@
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  ~       │  ;       │  :       │          │
-            &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &kp AMPS   &kp TILDE  &kp NB_LT  &kp NB_GT  &kp RSHFT
+            &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &kp AMPS   &kp TILDE  &kp LT  &kp GT  &kp RSHFT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &lt 2 TAB  &kp LCTRL      &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
