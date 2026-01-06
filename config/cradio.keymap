@@ -156,10 +156,10 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
+            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,     NB_SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT   &kp NB_FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                          &lt 2 TAB  &td LCTRL ENTER &td RSHFT SPACE  &lt 1 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -189,11 +189,11 @@
         //│ ESC      │  1       │  2       │  3       │ DELETE   │   │  ^       │  (       │  )       │  |       │  BSPC    │
             &kp ESC    &kp N1     &kp N2     &kp N3     &kp DEL        &kp CARET  &kp LPAR   &kp RPAR   &kp PIPE   &kp BSPC 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ TAB      │  4       │  5       │  6       │ USB/BLE  │   │  *       │  -       │  =       │  \       │ ENTER    │
-            &kp TAB    &kp N4     &kp N5     &kp N6     &out OUT_TOG   &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp ENTER
+        //│ TAB      │  4       │  5       │  6       │ USB/BLE  │   │  *       │  -       │  =       │  `       │ ENTER    │
+            &kp TAB    &kp N4     &kp N5     &kp N6  &out OUT_TOG &kp ASTRK &kp NB_MINUS &kp NB_EQUAL &kp NB_GRAVE &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  7       │  8       │  9       │  0       │   │  +       │  _       │          │          │  `       │
-            &kp F2     &kp N7     &kp N8     &kp N9     &kp N0         &kp PLUS   &kp UNDER  &trans     &trans     &kp GRAVE
+        //│          │  7       │  8       │  9       │  0       │   │  +       │  _       │          │          │  \       │
+            &kp F2     &kp N7     &kp N8     &kp N9     &kp N0         &kp PLUS   &kp UNDER  &trans     &trans     &kp NB_BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &kp LALT   &lt 1 RCTRL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
