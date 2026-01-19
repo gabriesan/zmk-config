@@ -175,7 +175,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │  {       │  }       │  [       │  ]       │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  BSPC    │
-            &kp ESC &kp NB_LBRC &kp NB_RBRC &kp NB_LBKT &kp NB_RBKT    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC 
+            &kp ESC &kp NB_LBRC &kp NB_RBRC &kp NB_LBKT &kp NB_RBKT    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ENTER   │
             &kp EXCL   &kp NB_AT  &kp HASH  &kp NB_DLLR &kp PRCNT      &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp ENTER
@@ -192,7 +192,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │  1       │  2       │  3       │ DELETE   │   │  (       │  )       │  =       │  |       │  BSPC    │
-            &kp ESC    &kp N1     &kp N2     &kp N3     &kp DEL    &kp NB_LPAR &kp NB_RPAR &kp NB_EQUAL &kp NB_PIPE &kp BSPC 
+            &kp ESC    &kp N1     &kp N2     &kp N3     &kp DEL    &kp NB_LPAR &kp NB_RPAR &kp NB_EQUAL &kp NB_PIPE &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ TAB      │  4       │  5       │  6       │ USB/BLE  │   │  *       │  -       │  ?       │  ^       │ ENTER    │
             &kp TAB    &kp N4     &kp N5     &kp N6  &out OUT_TOG &kp NB_ASTRK &kp NB_MINUS &kp NB_QMARK &kp NB_CARET &kp ENTER
