@@ -170,13 +170,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │  {       │  }       │  [       │  ]       │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  BSPC    │
-            &kp ESC    &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC 
+            &kp ESC &kp NB_LBRC &kp NB_RBRC &kp NB_LBKT &kp NB_RBKT    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ENTER   │
             &kp EXCL   &kp NB_AT  &kp HASH  &kp NB_DLLR &kp PRCNT      &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  ~       │  <       │  >       │          │
-            &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp NB_AMPS &kp NB_TILDE &kp NB_LT  &kp NB_GT  &kp RSHFT
+            &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp NB_AMPS &kp NB_TILDE &kp NB_LT &kp NB_GT &kp NB_QMARK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &lt 2 TAB  &kp LCTRL      &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
