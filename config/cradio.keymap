@@ -49,6 +49,11 @@
             key-positions = <0 4>;
             bindings = <&kp PSCRN>;
         };
+        combo_aa {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp LBKT>;
+        };
         combo_ae {
             timeout-ms = <50>;
             key-positions = <2 10>;
@@ -59,10 +64,10 @@
             key-positions = <2 8>;
             bindings = <&kp SEMI>;
         };
-        combo_aa {
+        combo_qmark {
             timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp LBKT>;
+            key-positions = <28 29>;
+            bindings = <&kp NB_QMARK>;
         };
         combo_prev {
             timeout-ms = <50>;
